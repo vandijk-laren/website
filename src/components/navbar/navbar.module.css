@@ -1,1 +1,32 @@
- 
+.mainContainer {
+  width: 100vw;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2d2d233;
+}
+
+#img {
+  position: absolute;
+  left: 1em;
+  object-fit: cover;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  width: fit-content;
+}
+
+.devider {
+  height: 2.5vh;
+  border-left: 0.1em solid black;
+}
+
+#navText {
+  font-weight: bold;
+  font-size: 1.2em;
+}
