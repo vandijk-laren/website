@@ -23,10 +23,11 @@
 
 .devider {
   height: 2.5vh;
-  border-left: 0.1em solid black;
+  border-left: 0.1em solid var(--primary-text-color);
 }
 
 #navText {
+  color: var(--primary-text-color);
   font-weight: bold;
   font-size: 1.2em;
 }
