@@ -4,6 +4,7 @@
   width: 100vw;
   height: 84vh;
   color: var(--secondary-text-color);
+  margin-top: 13vh;
 }
 
 #img {

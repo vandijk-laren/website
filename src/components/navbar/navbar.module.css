@@ -4,7 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d2d2d233;
+  background-color: #d2d2d27a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
 }
 
 #img {
