@@ -1,0 +1,73 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 84vh;
+  color: var(--secondary-text-color);
+  margin-top: 13vh;
+}
+
+#img {
+  width: 100vw;
+  height: 84vh;
+  object-fit: cover;
+  position: absolute;
+}
+
+.contentContainer {
+  width: 85vw;
+  height: 40vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#topTitle {
+  font-size: 10em;
+  font-weight: bold;
+}
+
+#middelTitle {
+  font-size: 5em;
+  padding-left: 1.5em;
+}
+
+#lowTitle {
+  font-size: 5em;
+  font-weight: 600;
+  padding-left: 2.5em;
+}
+
+#description {
+  font-size: 1.5em;
+  width: 40%;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 2em;
+}
+
+.btnFull {
+  padding: 1em;
+  border-radius: 1em;
+  border-style: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+  font-size: 2em;
+}
+
+.btnClear {
+  padding: 1em;
+  border-style: none;
+  background: transparent;
+  color: var(--secondary-text-color);
+  font-size: 2em;
+}
