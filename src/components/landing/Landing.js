@@ -4,7 +4,7 @@ import bg from "../../assets/landingBg.svg";
 
 export default function Landing() {
   return (
-    <div class="flex flex-row justify-center w-screen h-[80vh] text-secondary-text-color mt-24">
+    <div class="flex flex-row justify-center w-screen h-[80vh] text-secondary-text-color mt-28">
       <img
         class="w-screen h-4/5 object-cover absolute"
         src={bg}

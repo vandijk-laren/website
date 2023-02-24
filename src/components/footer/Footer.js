@@ -61,7 +61,9 @@ export default function Footer() {
             return (
               <div class="flex flex-row justify-between w-60" key={element.dag}>
                 <p>{element.dag}</p>
-                <p>{element.tijd}</p>
+                <div class="w-2/5">
+                  <p>{element.tijd}</p>
+                </div>
               </div>
             );
           })}

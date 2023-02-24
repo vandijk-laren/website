@@ -4,7 +4,7 @@ import logoBlue from "../../assets/logoBlue.svg";
 
 export default function Navbar() {
   return (
-    <div class="w-screen h-24 flex flex-row justify-center items-center bg-[#d2d2d27a] fixed top-0 left-0 z-[100] backdrop-blur-[5px]">
+    <div class="w-screen h-28 flex flex-row justify-center items-center bg-[#d2d2d27a] fixed top-0 left-0 z-[100] backdrop-blur-[5px]">
       <img
         class="hidden md:block lg:block absolute left-[1em] object-cover"
         src={logoBlue}
