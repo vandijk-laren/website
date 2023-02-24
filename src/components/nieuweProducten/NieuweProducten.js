@@ -26,10 +26,10 @@ export default function NieuweProducten() {
   return (
     <div class="flex flex-col p-6">
       <p class="text-4xl font-bold">Nieuwe producten</p>
-      <div class="flex flex-row p-6 gap-8">
+      <div class="flex flex-col md:flex-row lg:flex-row p-6 gap-8">
         {producten.map((element) => {
           return (
-            <div class="w-3/5" key={element.title}>
+            <div class="w-full" key={element.title}>
               <img
                 class="w-full"
                 src={require(`../../assets/${element.img}`)}
