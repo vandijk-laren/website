@@ -13,6 +13,7 @@ export default function HomePage() {
       <Landing />
       <NieuweProducten />
       <OverDeWinkel />
+
       <Footer />
     </div>
   );
