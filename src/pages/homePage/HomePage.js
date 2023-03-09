@@ -11,9 +11,8 @@ export default function HomePage() {
     <div class="h-fit">
       <Navbar />
       <Landing />
-      <NieuweProducten />
-      <OverDeWinkel />
-
+      {/* <NieuweProducten />
+      <OverDeWinkel /> */}
       <Footer />
     </div>
   );

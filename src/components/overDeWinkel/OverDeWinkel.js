@@ -8,7 +8,7 @@ import foto5 from "../overDeWinkel/Images/foto5.svg";
 
 export default function OverDeWinkel() {
   return (
-    <section className="flex flew-row">
+    <section className="md:flex flew-row lg:w-8/12 mx-auto">
       <div className="md:p-10">
         <div>
           <h1 className="text-xl font-bold">Over de Winkel</h1>
