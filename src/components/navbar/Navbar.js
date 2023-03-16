@@ -11,7 +11,7 @@ export default function Navbar() {
         alt="logo van van dijk laren"
       />
       <div class="flex flex-row justify-between items-center gap-[1em] w-fit">
-        <p class="text-primary-text-color font-bold">Honden</p>
+        <a class="text-primary-text-color font-bold" href="/honden">Honden</a>
         <p class="text-primary-text-color font-bold">Katten</p>
         <p class="text-primary-text-color font-bold">en meer</p>
         <div className={styles.devider} />
