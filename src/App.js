@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage"
 import DogPage from "./pages/DogPage"
 
+import WorkInProgress from './components/workInProgress/WorkInProgress';
+
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/honden" element={<DogPage />} />
+        <Route path="/katten" element={<WorkInProgress />} />
+        <Route path="/meer" element={<WorkInProgress />} />
+        <Route path="/contact" element={<WorkInProgress />} />
       </Routes>
     </BrowserRouter>
   );
