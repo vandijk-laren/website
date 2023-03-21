@@ -5,13 +5,14 @@ import Footer from "../components/footer/Footer";
 import Devider from "../components/devider/Devider";
 import DogCatCard from "../components/dogCatCard/DogCatCard";
 
-export default function DogPage() {
-  return (
-    <div className="h-fit">
-      <Navbar />
-      <Landing />
-      <DogCatCard />
-      <Footer />
-    </div>
-  );
+export default function Catpage() {
+    return (
+        <div className="h-fit">
+            <Navbar />
+            <Landing />
+            <DogCatCard />
+            <Footer />
+        </div>
+    );
 }
+

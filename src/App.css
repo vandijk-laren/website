@@ -12,3 +12,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.reverseEven:nth-child(even) {
+  flex-direction: row-reverse;
+}
