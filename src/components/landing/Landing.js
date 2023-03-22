@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./landing.module.css";
 import bg from "../../assets/landingBg.svg";
 
 export default function Landing() {

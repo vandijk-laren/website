@@ -14,5 +14,5 @@
 }
 
 .reverseEven:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse !important;
 }
