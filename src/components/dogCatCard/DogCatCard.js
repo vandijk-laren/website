@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom';
-import { Dog, DogFood, Cat } from "./Product"
+import { Dog, DogFood, DogGoods, Cat, CatFood, CatGoods } from "./Product"
 import Devider from "../devider/Devider"
 
 export default function DogCatCard() {
@@ -10,11 +10,21 @@ export default function DogCatCard() {
         if (location.pathname === "/honden") {
             setPage(Dog)
         }
+        if (location.pathname === "/honden/voedsel") {
+            setPage(DogFood)
+        }
+        if (location.pathname === "/honden/goederen") {
+            setPage(DogGoods)
+        }
+
         if (location.pathname === "/katten") {
             setPage(Cat)
         }
-        if (location.pathname === "/honden/voedsel") {
-            setPage(DogFood)
+        if (location.pathname === "/katten/voedsel") {
+            setPage(CatFood)
+        }
+        if (location.pathname === "/katten/goederen") {
+            setPage(CatGoods)
         }
     }, [])
 

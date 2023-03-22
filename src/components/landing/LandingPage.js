@@ -9,7 +9,20 @@ export default function Landing() {
         if (location.pathname === "/honden") {
             setPage(Dog)
         }
+        if (location.pathname === "/honden/voedsel") {
+            setPage(Dog)
+        }
+        if (location.pathname === "/honden/goederen") {
+            setPage(Dog)
+        }
+
         if (location.pathname === "/katten") {
+            setPage(Cat)
+        }
+        if (location.pathname === "/katten/voedsel") {
+            setPage(Cat)
+        }
+        if (location.pathname === "/katten/goederen") {
             setPage(Cat)
         }
     }, [])
