@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <div>
       <Navbar />
-      <Landing />
+
       <Contact />
       <Footer />
     </div>
