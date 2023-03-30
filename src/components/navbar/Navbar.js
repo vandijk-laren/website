@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="w-screen h-28 flex flex-row justify-center items-center bg-[#d2d2d27a] fixed top-0 left-0 z-[100] backdrop-blur-[5px]">
-      <Link
-        className="hidden md:block lg:block absolute left-[1em] object-cover"
-        to="/"
-      >
-        <img src={logoBlue} alt="logo van van dijk laren" />
+    <div class="w-screen h-28 flex flex-row justify-center items-center bg-[#d2d2d27a] fixed top-0 left-0 z-[100] backdrop-blur-[5px]">
+      <Link class="hidden md:block lg:block absolute left-[1em] object-cover" to="/">
+        <img
+          src={logoBlue}
+          alt="logo van van dijk laren"
+        />
       </Link>
       <div className="flex flex-row justify-between items-center gap-[1em] w-fit">
         <Link className="text-primary-text-color font-bold" to="/honden">

@@ -39,7 +39,7 @@ export default function Landing() {
         {
             title: "Katten",
             descption: "Wij verkopen een heleboel verschillende soorten merken voor uw hond. Voor verschillende soorten producten. Ook geven wij advies over de verzorging van een hond en wat daarvoor nodig is.",
-            img: "landingBg.svg",
+            img: "bgCat.svg",
         }
     ]
 
