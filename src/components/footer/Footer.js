@@ -1,8 +1,6 @@
 import React from "react";
-import styles from "./footer.module.css";
-
 import Devider from "../devider/Devider";
-import logoBlue from "../../assets/logoBlue.svg";
+import logoWhite from "../../assets/logoWhite.svg";
 
 export default function Footer() {
   const opening = [
@@ -70,7 +68,7 @@ export default function Footer() {
         </div >
       </div >
       <div className="hidden md:w-2/6 lg:w-2/6 md:p-2 lg:p-2 md:flex lg:flex md:justify-center lg:justify-center md:items-center lg:items-center" >
-        <img className="w-4/5" src={logoBlue} alt="Logo" />
+        <img className="w-4/5" src={logoWhite} alt="Logo" />
       </div >
     </div >
   );
