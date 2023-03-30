@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bg from "../../assets/contactbg.png";
+import bg from "../../assets/contactBg.svg";
 
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/8d5f75b0-c97a-11ed-9580-715614691683"; // TODO - fill on the later step
@@ -23,19 +23,19 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="w-screen h-fit">
+    <div className="relative w-screen h-fit">
       <img
-        className="w-screen h-full max-h-full object-cover absolute brightness-50"
+        className="w-screen h-full object-cover absolute brightness-50"
         src={bg}
         alt="maps"
       />
       <div className="flex flex-col h-full w-screen justify-around items-center py-40 md:flex-row md:items-end lg:flex-row lg:items-end">
         <div className="text-white relative basis-1/2 ">
           <div>
-            <p className="text-6xl mb-[1em]">Neem contact met ons op</p>
+            <p className="text-6xl mb-[0.5em]">Neem contact met ons op</p>
             <p className="text-xl">
               Heb je nog vragen die wij niet hebben kunnen beantwoorden op de
-              website? stuur ons dan een mailtje met je vraag!
+              website? <br /> Stuur ons dan een mailtje met je vraag!
             </p>
           </div>
           <div className="backdrop-opacity-30  bg-[#d9d9d9]/60 p-8 rounded-xl mt-[2em]">
@@ -50,7 +50,7 @@ const ContactForm = () => {
                   type="text"
                   placeholder="Naam"
                   name="name"
-                  className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+                  className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
                   required
                 />
               </div>
@@ -59,7 +59,7 @@ const ContactForm = () => {
                   type="email"
                   placeholder="Email"
                   name="email"
-                  className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+                  className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
                   required
                 />
               </div>
@@ -67,11 +67,11 @@ const ContactForm = () => {
                 <textarea
                   placeholder="Bericht"
                   name="message"
-                  className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+                  className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full h-36"
                   required
                 />
               </div>
-              <div className="mb-3 pt-0 flex justify-center">
+              <div className="flex justify-center">
                 <button
                   className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                   type="submit"

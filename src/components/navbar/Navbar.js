@@ -5,25 +5,25 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div class="w-screen h-28 flex flex-row justify-center items-center bg-[#d2d2d27a] fixed top-0 left-0 z-[100] backdrop-blur-[5px]">
+    <div className="w-screen h-28 flex flex-row justify-center items-center bg-[#d2d2d27a] fixed top-0 left-0 z-[100] backdrop-blur-[5px]">
       <Link
-        class="hidden md:block lg:block absolute left-[1em] object-cover"
+        className="hidden md:block lg:block absolute left-[1em] object-cover"
         to="/"
       >
         <img src={logoBlue} alt="logo van van dijk laren" />
       </Link>
-      <div class="flex flex-row justify-between items-center gap-[1em] w-fit">
-        <Link class="text-primary-text-color font-bold" to="/honden">
+      <div className="flex flex-row justify-between items-center gap-[1em] w-fit">
+        <Link className="text-primary-text-color font-bold" to="/honden">
           Honden
         </Link>
-        <Link class="text-primary-text-color font-bold" to="/katten">
+        <Link className="text-primary-text-color font-bold" to="/katten">
           Katten
         </Link>
-        <Link class="text-primary-text-color font-bold" to="/meer">
+        <Link className="text-primary-text-color font-bold" to="/meer">
           en meer
         </Link>
         <div className={styles.devider} />
-        <Link class="text-primary-text-color font-bold" to="/contact">
+        <Link className="text-primary-text-color font-bold" to="/contact">
           Contact
         </Link>
       </div>
