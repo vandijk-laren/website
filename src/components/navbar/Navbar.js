@@ -12,12 +12,20 @@ export default function Navbar() {
           alt="logo van van dijk laren"
         />
       </Link>
-      <div class="flex flex-row justify-between items-center gap-[1em] w-fit">
-        <Link class="text-primary-text-color font-bold" to="/honden">Honden</Link>
-        <Link class="text-primary-text-color font-bold" to="/katten">Katten</Link>
-        <Link class="text-primary-text-color font-bold" to="/meer">en meer</Link>
+      <div className="flex flex-row justify-between items-center gap-[1em] w-fit">
+        <Link className="text-primary-text-color font-bold" to="/honden">
+          Honden
+        </Link>
+        <Link className="text-primary-text-color font-bold" to="/katten">
+          Katten
+        </Link>
+        <Link className="text-primary-text-color font-bold" to="/meer">
+          en meer
+        </Link>
         <div className={styles.devider} />
-        <Link class="text-primary-text-color font-bold" to="/contact">Contact</Link>
+        <Link className="text-primary-text-color font-bold" to="/contact">
+          Contact
+        </Link>
       </div>
     </div>
   );

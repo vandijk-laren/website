@@ -1,19 +1,18 @@
-import './App.css';
-import ReactDOM from "react-dom/client";
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import HomePage from "./pages/HomePage"
+import HomePage from "./pages/HomePage";
+import Contact from "./pages/ContactPage";
 
-import DogPage from "./pages/DogPage"
-import DogFood from './pages/dogPage/DogFood';
-import DogGoods from "./pages/dogPage/DogGoods"
+import DogPage from "./pages/DogPage";
+import DogFood from "./pages/dogPage/DogFood";
+import DogGoods from "./pages/dogPage/DogGoods";
 
-import Catpage from './pages/CatPage';
-import CatFood from "./pages/catPage/CatFood"
-import CatGoods from "./pages/catPage/CatGoods"
+import Catpage from "./pages/CatPage";
+import CatFood from "./pages/catPage/CatFood";
+import CatGoods from "./pages/catPage/CatGoods";
 
-import WorkInProgress from './components/workInProgress/WorkInProgress';
-
+import WorkInProgress from "./components/workInProgress/WorkInProgress";
 
 function App() {
   return (
@@ -30,9 +29,9 @@ function App() {
         <Route path="/katten/goederen" element={<CatGoods />} />
 
         <Route path="/meer" element={<WorkInProgress />} />
-        <Route path="/contact" element={<WorkInProgress />} />
+        <Route path="/contact" element={<Contact />} />
 
-        <Route path="/workInProgress" element={<WorkInProgress />} />
+        {/* <Route path="/workInProgress" element={<WorkInProgress />} /> */}
       </Routes>
     </BrowserRouter>
   );

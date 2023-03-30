@@ -49,20 +49,20 @@ export default function Landing() {
         <section>
             {page?.map((element) => {
                 return (
-                    <div key={element.title} class="flex flex-row justify-center w-screen h-[80vh] text-secondary-text-color mt-28">
+                    <div key={element.title} className="flex flex-row justify-center w-screen h-[80vh] text-secondary-text-color mt-28">
                         <img
-                            class="w-screen h-4/5 object-cover absolute"
+                            className="w-screen h-4/5 object-cover absolute"
                             src={require(`../../assets/${element.img}`)}
                             alt="Foto van een hond als achtergrond"
                         />
-                        <div class="w-4/5 h-full relative flex flex-col justify-evenly">
-                            <div class="w-fit h-72 flex flex-col md:justify-evenly lg:justify-evenly">
-                                <div class="text-5xl md:text-9xl lg:text-9xl font-bold">
+                        <div className="w-4/5 h-full relative flex flex-col justify-evenly">
+                            <div className="w-fit h-72 flex flex-col md:justify-evenly lg:justify-evenly">
+                                <div className="text-5xl md:text-9xl lg:text-9xl font-bold">
                                     {element.title}
                                 </div>
                             </div>
-                            <div class="w-fit h-80 md:h-56 lg:h-56 flex flex-col justify-evenly">
-                                <p class="text-xl w-4/5 md:w-3/5 lg:w-2/5">
+                            <div className="w-fit h-80 md:h-56 lg:h-56 flex flex-col justify-evenly">
+                                <p className="text-xl w-4/5 md:w-3/5 lg:w-2/5">
                                     {element.descption}
                                 </p>
                             </div>
