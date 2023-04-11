@@ -1,10 +1,13 @@
 import React from "react";
-import styles from "./overDeWinkel.module.css";
 import foto1 from "../overDeWinkel/Images/foto1.svg";
 import foto2 from "../overDeWinkel/Images/foto2.svg";
 import foto3 from "../overDeWinkel/Images/foto3.svg";
 import foto4 from "../overDeWinkel/Images/foto4.svg";
 import foto5 from "../overDeWinkel/Images/foto5.svg";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ once: true });
 
 export default function OverDeWinkel() {
   return (
@@ -13,7 +16,10 @@ export default function OverDeWinkel() {
         <div>
           <h1 className="text-xl font-bold">Over de Winkel</h1>
         </div>
-        <div className="flex flex-col md:flex-row justify-center justify-evenly">
+        <div
+          data-aos="slide-right"
+          className="flex flex-col md:flex-row justify-evenly"
+        >
           <div className="flex p-6 basis-1/2 justify-center">
             <img src={foto1} alt="1954" />
           </div>
@@ -28,7 +34,10 @@ export default function OverDeWinkel() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-center justify-evenly bg-[#ACD4FA]">
+        <div
+          data-aos="slide-left"
+          className="flex flex-col md:flex-row-reverse justify-evenly bg-[#ACD4FA]"
+        >
           <div className="flex p-6 basis-1/2 justify-center">
             <img src={foto2} alt="1960" />
           </div>
@@ -45,7 +54,10 @@ export default function OverDeWinkel() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center justify-evenly">
+        <div
+          data-aos="slide-right"
+          className="flex flex-col md:flex-row justify-evenly"
+        >
           <div className="flex p-6 basis-1/2 justify-center">
             <img src={foto3} alt="1972" />
           </div>
@@ -60,7 +72,10 @@ export default function OverDeWinkel() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse justify-center justify-evenly bg-[#ACD4FA]">
+        <div
+          data-aos="slide-left"
+          className="flex flex-col md:flex-row-reverse justify-evenly bg-[#ACD4FA]"
+        >
           <div className="flex p-6 basis-1/2 justify-center">
             <img src={foto4} alt="2000" />
           </div>
@@ -76,7 +91,10 @@ export default function OverDeWinkel() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center justify-evenly">
+        <div
+          data-aos="slide-right"
+          className="flex flex-col md:flex-row justify-evenly"
+        >
           <div className="flex p-6 basis-1/2 justify-center">
             <img src={foto5} alt="nu" />
           </div>

@@ -1,5 +1,8 @@
 import React from "react";
-import styles from "./nieuweProducten.module.css";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function NieuweProducten() {
   const producten = [
@@ -8,18 +11,24 @@ export default function NieuweProducten() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros ut congue lacinia. Quisque egestas consequat tortor, a varius ligula accumsan nec. Cras aliquet ante augue. ",
       img: "hondMand.svg",
+      animation: "slide-right",
+      delay: "100",
     },
     {
       title: "Honden voer",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros ut congue lacinia. Quisque egestas consequat tortor, a varius ligula accumsan nec. Cras aliquet ante augue. ",
       img: "hondMand.svg",
+      animation: "slide-up",
+      delay: "100",
     },
     {
       title: "Katten voer",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros ut congue lacinia. Quisque egestas consequat tortor, a varius ligula accumsan nec. Cras aliquet ante augue. ",
       img: "hondMand.svg",
+      animation: "slide-left",
+      delay: "100",
     },
   ];
 
@@ -29,7 +38,13 @@ export default function NieuweProducten() {
       <div class="flex flex-col md:flex-row lg:flex-row p-6 gap-8">
         {producten.map((element) => {
           return (
-            <div class="w-full" key={element.title}>
+            <div
+              data-aos={element.animation}
+              data-aos-once="false"
+              data-aos-delay={element.delay}
+              class="w-full"
+              key={element.title}
+            >
               <img
                 class="w-full"
                 src={require(`../../assets/${element.img}`)}
