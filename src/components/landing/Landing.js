@@ -12,7 +12,7 @@ export default function Landing() {
       <div class="w-4/5 h-full relative flex flex-col justify-evenly">
         <div class="w-fit h-72 flex flex-col md:justify-evenly lg:justify-evenly">
           <div className="overflow-hidden">
-            <p class="text-5xl md:text-9xl lg:text-9xl font-bold animate-slideFromTop">
+            <p class="text-5xl md:text-9xl lg:text-9xl font-bold motion-safe:animate-slideFromTop">
               Wij willen
             </p>
           </div>
